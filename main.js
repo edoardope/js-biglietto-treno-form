@@ -91,6 +91,7 @@ function getprice() {
     let seat = Math.floor(Math.random() * 100) + 1;
     let tnumber = Math.floor(Math.random() * 1000) + 1;
     var ticketv = document.getElementById("ticketv")
+    var error = document.getElementById("error")
   
     if (departure === 'Milan' && arrival === 'Rome') {
         kmnumber = 573;
@@ -113,6 +114,7 @@ function getprice() {
     if (under18 == true && kmnumber > 0) {
 
         ticketv.classList.remove("d-none")
+        error.classList.add("d-none")
         document.getElementById('pname').innerHTML =` ${ name }`;
         document.getElementById('rate').innerHTML =` Under 18 `;
         document.getElementById('departure').innerHTML =` ${ departure }`;
@@ -125,6 +127,7 @@ function getprice() {
     } else if (over65 == true && kmnumber > 0) {
      
         ticketv.classList.remove("d-none")
+        error.classList.add("d-none")
         document.getElementById('pname').innerHTML =` ${ name }`;
         document.getElementById('rate').innerHTML =` over 65 `;
         document.getElementById('departure').innerHTML =` ${ departure }`;
@@ -136,6 +139,7 @@ function getprice() {
     } else if(kmnumber > 0) {
         
         ticketv.classList.remove("d-none")
+        error.classList.add("d-none")
         document.getElementById('pname').innerHTML =` ${ name }`;
         document.getElementById('rate').innerHTML =` Standart `;
         document.getElementById('departure').innerHTML =` ${ departure }`;
@@ -145,7 +149,9 @@ function getprice() {
         document.getElementById('tnumber').innerHTML =` TRAIN NUMBER: ${ tnumber }`;
 
     } else {
-
+      
+        error.classList.remove("d-none")
+        ticketv.classList.add("d-none")
 
     }
 
