@@ -1,0 +1,44 @@
+.container-xl{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.cont-fluid{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    min-height: 300px;
+    padding: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-bottom: 100px;
+}
+
+.card{
+    padding: 0;
+}
+
+.cincp{
+    width: 50%;
+    display: inline-block;
+}
+
+#ticketv{
+    padding: 0;
+}
+
+.ticketv-head{
+    background-color: orange;
+    min-height: 60px;
+    border-radius: 15px ;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 1px solid black;
+}
+
+.ticketv-body{
+    min-height: 250px;
+    padding: 0;
+    border: 0;
+    margin-bottom: 0;
+}
